@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Regular";
+  src: url("./assets/fonts/RSU\ Text_Regular.ttf");
+}
+
+.regular-th {
+  font-family: "Regular", "Regular";
+}
