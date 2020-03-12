@@ -40,7 +40,7 @@ export default class Home extends Component {
       <>
         {" "}
         <section className="home kanit">
-          <div style={{ color: "white", textAlign: "center", paddingTop: 190 }}>
+          <div style={{ color: "white", textAlign: "center", paddingTop: 180 }}>
             <div style={{ lineHeight: "60px" }}>
               <p
                 style={{
@@ -79,6 +79,7 @@ export default class Home extends Component {
             </div>
             <br />
             <br />
+            <br />
             <Button className="kanit home-btn" outline color="danger">
               เปิดรับสมัครแล้ววันนี้
             </Button>
@@ -89,7 +90,7 @@ export default class Home extends Component {
               outline
               color="warning"
             >
-              ทำเนียบบุคคลากร
+              ทำเนียบบุคลากร
             </Button>
             <br />
             <br />{" "}
@@ -265,8 +266,9 @@ export default class Home extends Component {
                 </p>
               </Col>
             </Row>
-            <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-            <br /> <br />{" "}
+            <br /> <br /> <br /> <br /> <br /> <br />
+            <br /> <br />
+            <br /> <br /> <br />{" "}
             <div>
               <i
                 className="fas fa-eye"
@@ -302,7 +304,6 @@ export default class Home extends Component {
                 data-numposts="5"
               ></div>
             </Container>
-           
           </div>
         </div>
       </>

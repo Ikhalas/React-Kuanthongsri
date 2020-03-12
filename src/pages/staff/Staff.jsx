@@ -1,21 +1,19 @@
 import React, { Component } from "react";
 
-export default class Contact extends Component {
+export default class Staff extends Component {
   render() {
     return (
       <>
-        <section className="contact kanit">
+        <section className="staff kanit">
           <div
             style={{ color: "white", fontSize: "60px", fontWeight: "lighter" }}
           >
             <p style={{ paddingTop: "140px", paddingLeft: "100px" }}>
-              ติดต่อเรา
+              ทำเนียบบุคลากร
             </p>
           </div>
         </section>
-        <div style={{ height: "100vh" }}>
-          <br />
-        </div>
+        <div style={{ height: "100vh" }}></div>;
       </>
     );
   }
