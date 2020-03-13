@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { MobileView, isMobile } from "react-device-detect";
 
 export default class Footer extends Component {
   render() {
@@ -15,8 +16,12 @@ export default class Footer extends Component {
         >
           <br />
           <br />
-          <p style={{ fontSize: "20px" }}>ออกแบบและพัฒนาโดย</p>
           <p style={{ fontSize: "15px" }}>
+            ออกแบบและพัฒนาโดย{" "}
+            {MobileView && isMobile ? <br/> : ''}
+            <span style={{ fontSize: "30px" }}>นางสาวศุภรัตน์ เชื้อช่วย</span>
+          </p>
+          <p style={{ fontSize: "20px" }}>
             นักศึกษาระดับ ปวส.2 สาขาคอมพิวเตอร์ธุรกิจ
             วิทยาลัยอาชีวศึกษาโปลีเทคนิคตรัง
           </p>
@@ -33,8 +38,8 @@ export default class Footer extends Component {
         >
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with{" "}
           <i className="fas fa-heart" style={{ fontSize: "10px" }}></i> and{" "}
-          <i className="fas fa-coffee" style={{ fontSize: "10px" }}></i> by Ikhalas
-          :X
+          <i className="fas fa-coffee" style={{ fontSize: "10px" }}></i> by
+          Ikhalas :X
         </div>
       </>
     );

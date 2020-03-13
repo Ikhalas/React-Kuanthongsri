@@ -6,10 +6,12 @@ export default class Staff extends Component {
       <>
         <section className="staff kanit">
           <div
-            style={{ color: "white", fontSize: "60px", fontWeight: "lighter" }}
+            style={{ color: "white", fontSize: "50px", fontWeight: "lighter" }}
           >
-            <p style={{ paddingTop: "140px", paddingLeft: "100px" }}>
+            <p style={{ paddingTop: "10%", paddingLeft: "5%", lineHeight:'120%' }}>
+            <br/>
               ทำเนียบบุคลากร
+              <br/><br/>
             </p>
           </div>
         </section>

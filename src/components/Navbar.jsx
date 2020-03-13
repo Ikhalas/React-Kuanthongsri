@@ -17,7 +17,7 @@ export default class Navbar extends Component {
 
   handleChangeChk = () => {
     this.setState({ chkbox: !this.state.chkbox },()=>{
-      console.log(this.state.chkbox)
+      //console.log(this.state.chkbox)
     });
   };
 

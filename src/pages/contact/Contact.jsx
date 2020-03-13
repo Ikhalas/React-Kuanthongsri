@@ -6,10 +6,12 @@ export default class Contact extends Component {
       <>
         <section className="contact kanit">
           <div
-            style={{ color: "white", fontSize: "60px", fontWeight: "lighter" }}
+            style={{ color: "white", fontSize: "50px", fontWeight: "lighter" }}
           >
-            <p style={{ paddingTop: "140px", paddingLeft: "100px" }}>
+            <p style={{ paddingTop: "10%", paddingLeft: "5%", lineHeight:'120%' }}>
+              <br/>
               ติดต่อเรา
+              <br/><br/>          
             </p>
           </div>
         </section>

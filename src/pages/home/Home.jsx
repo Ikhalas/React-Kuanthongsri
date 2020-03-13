@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { MobileView, isMobile } from "react-device-detect";
 import Calendar from "react-calendar";
 import { Carousel } from "react-responsive-carousel";
 import { Container, Row, Col, Button } from "reactstrap";
@@ -40,17 +41,21 @@ export default class Home extends Component {
       <>
         {" "}
         <section className="home kanit">
-          <div style={{ color: "white", textAlign: "center", paddingTop: '20%' }}>
-            <div style={{ lineHeight: "60px" }}>
+          <div
+            style={{ color: "white", textAlign: "center", paddingTop: "16%" }}
+          >
+            <div style={{ lineHeight: "90px" }}>
               <p
                 style={{
-                  fontSize: "60px",
+                  fontSize: "85px",
                   color: "#ffc40b",
                   fontWeight: "bold"
                 }}
                 className="kanit"
               >
-                ศูนย์พัฒนาเด็กเล็กควนทองสีห์
+                ศูนย์พัฒนาเด็กเล็ก
+                {MobileView && isMobile ? <br/> : ''}
+                ควนทองสีห์
               </p>
               <p
                 style={{
@@ -63,19 +68,14 @@ export default class Home extends Component {
                 ตำบลบางเป้า อำเภอกันตัง จังหวัดตรัง
               </p>
             </div>
-            <div>
-              <p
-                style={{ fontSize: "20px", fontWeight: "lighter" }}
-                className="kanit"
-              >
-                อบรม เลี้ยงดู และส่งเสริมพัฒนาการ
-              </p>
-              <p
-                style={{ fontSize: "20px", fontWeight: "lighter" }}
-                className="kanit"
-              >
-                ให้มีความพร้อม ด้านร่างกาย อารมณ์ จิตใจ สังคมและสติปัญญา
-              </p>
+            <div
+              style={{ fontSize: "20px", fontWeight: "lighter" }}
+              className="kanit"
+            >
+              <p>
+                อบรม เลี้ยงดู และส่งเสริมพัฒนาการให้มีความพร้อม</p>
+               <p> ด้านร่างกายอารมณ์ จิตใจ สังคมและสติปัญญา</p>
+              
             </div>
             <br />
             <br />
@@ -97,7 +97,6 @@ export default class Home extends Component {
             <Button className="kanit home-btn" outline color="primary">
               ติดต่อเรา
             </Button>
-        
             <p
               style={{
                 fontSize: "30px",
@@ -138,12 +137,10 @@ export default class Home extends Component {
                 </div>
               </Carousel>
             </div>
-
           </div>
-          <br/> <br/>
+          <br /> <br />
         </section>
         <div>
-          
           <div
             style={{
               backgroundColor: "#fff"
@@ -184,9 +181,11 @@ export default class Home extends Component {
                   src="https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/home-section.jpg?alt=media&token=d2bbfcaa-423b-44b3-b476-c540554309a0"
                 />
               </Col>
-              <Col md="3" className="pl-5" style={{padding : 0}}>
+              <Col md="3" className="pl-5" style={{ padding: 0 }}>
                 {" "}
-                <br /><br /><br />
+                <br />
+                <br />
+                <br />
                 <div
                   style={{
                     fontSize: "15px",
@@ -212,7 +211,6 @@ export default class Home extends Component {
                 </div>
               </Col>
             </Row>
-
             <Row style={{ paddingTop: 130 }} className="kanit">
               <Col md="7">
                 <p style={{ fontSize: "20px", fontWeight: "bold" }}>
@@ -234,7 +232,7 @@ export default class Home extends Component {
                 </p>
               </Col>
               <Col md="5">
-                <div className='pl-5 pt-5' style={{ padding : 'auto' }}>
+                <div className="pl-5 pt-5" style={{ padding: "auto" }}>
                   <img
                     width="90%"
                     src="https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/infomation%2Fchild-home.png?alt=media&token=6411d194-a5fc-4461-ade6-192b0cc1ab53"
@@ -245,7 +243,7 @@ export default class Home extends Component {
             <Row style={{ paddingTop: 100 }} className="kanit">
               <Col md="6">
                 {" "}
-                <div className="pr-3" style={{ padding : 'auto' }}>
+                <div className="pr-3" style={{ padding: "auto" }}>
                   <img
                     width="100%"
                     src="https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/infomation%2Fchild-home-2.png?alt=media&token=1295dea3-5783-4cd0-870d-cb9ecd35f014"

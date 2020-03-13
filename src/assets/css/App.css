@@ -418,7 +418,7 @@ body {
 
 .activity{
   width: 100%;
-  height: 42vh;
+  height: auto;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/Activities-Sec.jpg?alt=media&token=6663fc6d-cece-40d0-b7c1-34db38e5475c);
   background-position: center top;
   background-size: cover;
@@ -426,7 +426,7 @@ body {
 
 .staff{
   width: 100%;
-  height: 42vh;
+  height: auto;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/Staff-Sec.jpg?alt=media&token=5b2d348c-5096-4994-9a99-fbce8deb88f8);
   background-position: center top;
   background-size: cover;
@@ -434,7 +434,7 @@ body {
 
 .contact{
   width: 100%;
-  height: 42vh;
+  height: auto;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/Contact-Sec.jpg?alt=media&token=5238841a-ae35-40a1-aee3-6180780c9c2a);
   background-position: center top;
   background-size: cover;
