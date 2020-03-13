@@ -91,7 +91,7 @@ body {
 
 .home {
   width: 100%;
-  height: 180vh;
+  height: auto;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/Home-Sec.png?alt=media&token=46e0be50-673a-4254-8489-531996ee30ee);
   background-position: center top;
   background-size: cover;
@@ -108,6 +108,16 @@ body {
   transition: all 0.4s ease;
 }
 
+.checkbtn{
+  font-size: 30px;
+  color: #9d9e9e;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+
+
 /* Media qurey section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -117,6 +127,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  #check{
+    display: none;
+  }
+
   .navTrigger {
     display: block;
   }
@@ -126,26 +140,31 @@ body {
   .nav div.main_list {
     width: 100%;
     height: 0;
-    overflow: hidden;
+
   }
   .nav div.show_list {
     height: auto;
     display: none;
   }
   .nav div.main_list ul {
-    flex-direction: column;
+    position: fixed;
+    text-align: center;
     width: 100%;
     height: 100vh;
     right: 0;
-    left: 0;
     bottom: 0;
+    top: 0px;
     background-color: #111;
+    display: block;
+    transition: all .5s;
+    padding-top: 100px;
     /*same background color of navbar*/
     background-position: center top;
   }
   .nav div.main_list ul li {
     width: 100%;
-    text-align: right;
+    text-align: left;
+    
   }
   .nav div.main_list ul li a {
     text-align: center;
@@ -156,12 +175,16 @@ body {
   .nav div.media_button {
     display: block;
   }
+  
+  
 }
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
+  color: #fff;
+  font-size: 60px;
   cursor: pointer;
   width: 30px;
   height: 25px;
@@ -173,7 +196,7 @@ body {
 }
 
 .navTrigger i {
-  background-color: #fff;
+  
   border-radius: 2px;
   content: "";
   display: block;

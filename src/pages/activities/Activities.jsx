@@ -18,7 +18,7 @@ export default class Activities extends Component {
           <div
             style={{ color: "white", fontSize: "60px", fontWeight: "lighter" }}
           >
-            <p style={{ paddingTop: "140px", paddingLeft: "100px" }}>
+            <p style={{ paddingTop: "10%", paddingLeft: "5%" }}>
               ภาพกิจกรรมของน้อง ๆ
             </p>
           </div>

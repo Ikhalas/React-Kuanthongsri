@@ -40,7 +40,7 @@ export default class Home extends Component {
       <>
         {" "}
         <section className="home kanit">
-          <div style={{ color: "white", textAlign: "center", paddingTop: 180 }}>
+          <div style={{ color: "white", textAlign: "center", paddingTop: '20%' }}>
             <div style={{ lineHeight: "60px" }}>
               <p
                 style={{
@@ -97,12 +97,12 @@ export default class Home extends Component {
             <Button className="kanit home-btn" outline color="primary">
               ติดต่อเรา
             </Button>
-            <br />{" "}
+        
             <p
               style={{
                 fontSize: "30px",
                 fontWeight: "bold",
-                paddingTop: "100px"
+                paddingTop: "8%"
               }}
               className="kanit"
             >
@@ -111,9 +111,9 @@ export default class Home extends Component {
             <br />
             <div align="center">
               <Carousel
-                width="50%"
+                width="60%"
                 autoPlay={true}
-                interval="3000"
+                interval={3000}
                 infiniteLoop={true}
               >
                 <div>
@@ -138,9 +138,12 @@ export default class Home extends Component {
                 </div>
               </Carousel>
             </div>
+
           </div>
+          <br/> <br/>
         </section>
         <div>
+          
           <div
             style={{
               backgroundColor: "#fff"
@@ -169,7 +172,7 @@ export default class Home extends Component {
               ข่าวประชาสัมพันธ์
             </p>
             <Row>
-              <Col md="9" style={{ paddingRight: 10 }}>
+              <Col md="9">
                 <p />
                 <p />
                 <img
@@ -177,13 +180,13 @@ export default class Home extends Component {
                     borderRadius: "10px",
                     boxShadow: "1px 1px 2px gray"
                   }}
-                  width="90%"
+                  width="100%"
                   src="https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/home-section.jpg?alt=media&token=d2bbfcaa-423b-44b3-b476-c540554309a0"
                 />
               </Col>
-              <Col md="3" style={{ padding: 0 }}>
+              <Col md="3" className="pl-5" style={{padding : 0}}>
                 {" "}
-                <br />
+                <br /><br /><br />
                 <div
                   style={{
                     fontSize: "15px",
@@ -209,6 +212,7 @@ export default class Home extends Component {
                 </div>
               </Col>
             </Row>
+
             <Row style={{ paddingTop: 130 }} className="kanit">
               <Col md="7">
                 <p style={{ fontSize: "20px", fontWeight: "bold" }}>
@@ -230,18 +234,18 @@ export default class Home extends Component {
                 </p>
               </Col>
               <Col md="5">
-                <div style={{ paddingLeft: 80, paddingTop: 30 }}>
+                <div className='pl-5 pt-5' style={{ padding : 'auto' }}>
                   <img
-                    width="100%"
+                    width="90%"
                     src="https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/infomation%2Fchild-home.png?alt=media&token=6411d194-a5fc-4461-ade6-192b0cc1ab53"
                   />
                 </div>
               </Col>
             </Row>
-            <Row style={{ paddingTop: 130 }} className="kanit">
+            <Row style={{ paddingTop: 100 }} className="kanit">
               <Col md="6">
                 {" "}
-                <div style={{ paddingRight: 80, paddingTop: 30 }}>
+                <div className="pr-3" style={{ padding : 'auto' }}>
                   <img
                     width="100%"
                     src="https://firebasestorage.googleapis.com/v0/b/kuanthongsri-cdc.appspot.com/o/infomation%2Fchild-home-2.png?alt=media&token=1295dea3-5783-4cd0-870d-cb9ecd35f014"
@@ -298,7 +302,7 @@ export default class Home extends Component {
             <br />
             <Container>
               <div
-                class="fb-comments"
+                className="fb-comments"
                 data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
                 data-width="100%"
                 data-numposts="5"
