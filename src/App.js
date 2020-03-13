@@ -32,7 +32,7 @@ export default class App extends Component {
           <Route exact path="/activities-5" component={Act5} />
           <Route exact path="/activities-6" component={Act6} />
           <Route exact path="/activities-7" component={Act7} />
-          <Route exact path="/staff" component={Staff} />
+          <Route exact path="/teachers" component={Staff} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />

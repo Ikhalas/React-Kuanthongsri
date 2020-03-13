@@ -44,7 +44,7 @@ export default class Navbar extends Component {
                   <Link to="/activities" onClick={this.handleChangeChk}>ภาพกิจกรรม</Link>
                 </li>
                 <li>
-                  <Link to="/staff" onClick={this.handleChangeChk}>บุคลากร</Link>
+                  <Link to="/teachers" onClick={this.handleChangeChk}>บุคลากร</Link>
                 </li>
                 <li>
                   <Link to="/contact" onClick={this.handleChangeChk}>ติดต่อ</Link>
