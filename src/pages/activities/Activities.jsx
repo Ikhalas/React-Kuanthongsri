@@ -192,9 +192,7 @@ export default class Activities extends Component {
                     </CardBody>
                   </Card>
                 </Link>
-              </Col>
-             
-                
+              </Col> 
             </Row>
           </Container>
         </div>
